@@ -26,7 +26,7 @@ export default function PessoasList({ pessoas, aoDeletar }: Props) {
                 {p.idade}
                 {p.idade < 18 && " (menor de idade)"}
               </td>
-              <td>
+              <td className="acoes">
                 <button
                   onClick={() => {
                     if (
