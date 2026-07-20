@@ -62,5 +62,21 @@ em `/swagger`.
 
 ## Como rodar o projeto
 
-Veja o arquivo [`GUIA_DE_EXECUCAO.md`](./GUIA_DE_EXECUCAO.md) para o passo a
-passo completo, incluindo instalação do .NET SDK e do Node.js.
+### Back-end
+
+\```bash
+  cd backend/ControleGastos.Api
+  dotnet restore
+  dotnet ef database update
+  dotnet run
+  \```
+  API disponível em `http://localhost:5062`(Swagger em`/swagger`).
+
+### Front-end
+
+\```bash
+  cd frontend
+  npm install
+  npm run dev
+  \```
+  Acesse `http://localhost:5173`.
